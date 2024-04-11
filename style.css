@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #D2D5D8;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -13,7 +12,6 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Tambahkan ini untuk posisi tombol di tengah */
     padding: 5px;
     background: linear-gradient(to bottom, #353535, #C8CFD0);
     width: 100%;
@@ -59,71 +57,123 @@ main {
     color: black;
     box-sizing: border-box;
     flex: 1;
-    display: flex;
-    justify-content: center; /* Tambahkan ini untuk posisi tombol di tengah */
-    align-items: center; /* Tambahkan ini untuk posisi tombol di tengah */
-    flex-wrap: wrap; /* Tambahkan ini agar tombol wrap ke bawah jika tidak cukup lebar */
-}
-
-.social-button {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 15px 30px;
-    border: 2px solid black;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    min-width: 200px; /* Panjang tombol */
-    height: 70px; /* Tinggi tombol */
-}
-
-.social-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.youtube-button {
-    border-color: red;
-}
-
-.instagram-button {
-    border-color: #405DE6;
-}
-
-.ngl-button {
-    border-color: #FFA500;
-}
-
-.wa-button {
-    border-color: #90EE90;
-}
-
-.ai-button {
-    border-color: #A17DFF;
-}
-
-.q-button {
-    border-color: #4EE1FF;
-}
-
-.c-button {
-    border-color: #C18BA8;
 }
 
 @media screen and (min-width: 768px) {
-    header {
-        background: linear-gradient(to bottom, #C8CFD0, #353535);
-    }
-
-    footer {
-        background: linear-gradient(to top, #C8CFD0, #353535);
-    }
-
-    main {
-        background-color: #A5E5F1;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(to bottom, #C8CFD0, #353535);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    left: 0;
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background: linear-gradient(to top, #C8CFD0, #353535);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer h5 {
+    margin: 5px;
+    font-size: 10px;
+}
+
+main {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #F4F4F4;
+    color: black;
+    box-sizing: border-box;
+    flex: 1;
+    align-items: center;
+    background-position: center
+}
+}
+
+
+        .social-button {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 30px;
+            border: 2px solid black;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .social-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .youtube-button {
+            border-color: red;
+        }
+
+        .instagram-button {
+            border-color: #405DE6;
+        }
+        
+        .ngl-button {
+            border-color: #FFA500;
+        }
+        
+        .wa-button {
+            border-color: #90EE90;
+        }
+        
+        .ai-button {
+            border-color: #A17DFF;
+        }
+        
+        .q-button {
+            border-color: #4EE1FF;
+        }
+        
+        .c-button {
+            border-color: #C18BA8;
+        }   
+        
+        main {
+            text-align: center;
+            flex-direction: column;
+            display: flex;
+        }
