@@ -2,6 +2,11 @@ body {
   background-color: #D2D5D8;
 }
 
+@media screen and (min-width: 768px) {
+body {
+  background-color: #D2D5D8;
+}
+
 button {
   transition: all 0.2s ease;
   background: #d2d5d8;
